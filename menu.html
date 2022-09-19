@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="bg-black px-10 pt-10">
+    <div class="flex flex-row justify-between items-center">
+      <a href="index.html" class=""><img src="images/logo.svg" alt="" /></a>
+
+      <a href="index.html" id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top-2"></span>
+
+        <span class="hamburger-bottom-2"></span>
+      </a>
+    </div>
+
+    <div class="md:hidden">
+      <div id="menu" class="flex flex-col items-left space-y-6 pt-28 text-white text-2xl font-jose uppercase">
+        <a href="#" class="hover:text-purple-600">About </a>
+        <div class="relative dropdown hello">
+          <a href="#" class="btn hover:text-purple-600">Careers</a>
+          <div class="option absolute text-darkGray mt-5 right-0.5 text-center py-5 px-8 w-full flex flex-col rounded-xl shadow-xl bg-white">
+            <div class="pb-2 pointer-cursor">Photography</div>
+            <hr class="w-full" />
+            <div class="pb-2">VR specialist</div>
+            <hr />
+            <div class="pb-2">Event Managers</div>
+            <hr />
+          </div>
+        </div>
+        <a href="#" class="hover:text-purple-600">Events</a>
+        <a href="#" class="hover:text-purple-600">Support</a>
+        <div class="relative dropdown hello">
+          <a href="#" class="btn hover:text-purple-600">Products</a>
+          <div class="option absolute text-darkGray mt-5 right-0.5 text-center py-5 px-8 w-full flex flex-col rounded-xl shadow-xl bg-white">
+            <div class="pb-2 pointer-cursor">Todo List</div>
+            <hr class="w-full" />
+            <div class="pb-2">Calender</div>
+            <hr />
+            <div class="pb-2">Reminders</div>
+            <hr />
+            <div class="pb-2">Planning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

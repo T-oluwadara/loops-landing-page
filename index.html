@@ -1,260 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <title>Frontend Mentor | Loopstudios landing page</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="input.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
+
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="header px-5 md:px-32 py-5 pb-10">
-        <nav class=" relative container mx-auto ">
-            <div class="flex items-center justify-between">
-                <div class="pt-2">
-                    <img src="images/logo.svg" alt="">
-                </div>
+      <nav class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="pt-2">
+            <img src="images/logo.svg" alt="" />
+          </div>
 
-                <div class="hidden md:flex space-x-4 text-white font-alata">
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">About </a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Careers</a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Events</a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Products</a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Support</a>
-                </div>
-
-
-                <a href="index2.html" id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </a>
+          <div class="hidden md:flex space-x-8 text-white font-alata ml-[-35px]">
+            <a href="#about-item" class="hover:border-b-2 hover:pb-3 hover:border-white text-center">About </a>
+            <a href="#faq-item" class="hover:border-b-2 hover:pb-3 hover:border-white">FAQS</a>
+            <a href="#cnt-item" class="hover:border-b-2 hover:pb-3 hover:border-white"> Contact Us </a>
+            <div class="relative dropdown">
+              <a href="#" class="btn">Careers</a>
+              <div class="option absolute text-darkGray mt-5 right-0.5 text-center py-5 px-8 w-64 flex flex-col rounded-xl shadow-xl bg-white">
+                <div class="pb-2 pointer-cursor">Photography</div>
+                <hr class="w-full" />
+                <div class="pb-2">VR specialist</div>
+                <hr />
+                <div class="pb-2">Event Managers</div>
+                <hr />
+              </div>
             </div>
 
-            <!-- <div class="md:hidden">
-                <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white 
-                    sm:auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="#">About </a>
-                    <a href="#">Careers</a>
-                    <a href="#">Events</a>
-                    <a href="#">Products</a>
-                    <a href="#">Support</a>
-                </div>
-            </div> -->
-        </nav>
+            <div class="relative dropdown">
+              <a href="#" class="btn">Products</a>
+              <div class="option absolute text-darkGray mt-5 right-0.5 text-center py-5 px-8 w-64 flex flex-col rounded-xl shadow-xl bg-white">
+                <div class="pb-2 pointer-cursor">Todo List</div>
+                <hr class="w-full" />
+                <div class="pb-2">Calender</div>
+                <hr />
+                <div class="pb-2">Reminders</div>
+                <hr />
+                <div class="pb-2">Planning</div>
+              </div>
+            </div>
+          </div>
 
-        <div class="py-28 ">
-            <h2 class="text-5xl md:text-7xl max-w-md font-jose text-white border-2 py-6 pl-5">
-                Immersive Experiences That Deliver
-            </h2>
+          <a href="menu.html" id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </a>
         </div>
+      </nav>
+
+      <div class="py-28">
+        <h2 class="text-5xl md:text-7xl max-w-md font-jose text-white border-2 py-6 pl-5">Immersive Experiences That Deliver</h2>
+      </div>
     </section>
 
     <section class="px-5 lg:px-48 py-10">
-        <div class="flex flex-col lg:flex-row items-center  mx-auto mt-10  ">
-            <div class="">
-                <img src="images/desktop/image-interactive.jpg" alt="">
-            </div>
-
-            <div class="flex flex-col  xl:mt-48 lg:mt-24 font-jose lg:ml-[-130px] lg:pl-24 md:bg-white">
-                <h1
-                    class="max-w-md text-5xl pt-10 text-veryDarkGray text-center pb-7 md:text-4xl lg:text-left lg:pt-10 xl:pt-36">
-                    The leader in interactive VR
-                </h1>
-                <p class="max-w-md text-center  lg:text-left pb-3 text-darkGray font-bold">
-                    Founded in 2011, Loopstudios has been producing world-class virtual reality
-                    projects for some of the best companies around the globe. Our award-winning
-                    creations have transformed businesses through digital experiences that bind
-                    to their brand.
-                </p>
-
-            </div>
+      <div class="flex flex-col lg:flex-row items-center mx-auto mt-10">
+        <div class="">
+          <img src="images/desktop/image-interactive.jpg" alt="" />
         </div>
+
+        <div class="flex flex-col xl:mt-48 lg:mt-24 font-jose lg:ml-[-130px] lg:pl-24 md:bg-white">
+          <h1 class="max-w-md text-5xl pt-10 text-veryDarkGray text-center pb-7 md:text-4xl lg:text-left lg:pt-10 xl:pt-36">The leader in interactive VR</h1>
+          <p class="max-w-md text-center lg:text-left pb-3 text-darkGray font-bold">
+            Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="px-5 lg:px-48 py-10">
-        <div class="flex flex-col lg:flex-row justify-between">
-            <div class="lg:w-1/2">
-                <h2 class="text-4xl text-center lg:text-left font-jose uppercase">
-                    Our creations
-                </h2>
-            </div>
-
-            <div class="">
-
-                <a href=""
-                    class="float-right hidden font-jose text-veryDarkGray lg:block border-2 py-2 px-10 border-black  hover:bg-black hover:text-white">SEE
-                    ALL</a>
-
-            </div>
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="lg:w-1/2">
+          <h2 class="text-4xl text-center lg:text-left font-jose uppercase">Our creations</h2>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center justify-between">
-            <div class="flex flex-col lg:flex-row justify-between lg:space-x-12 space-y-12 lg:space-y-0 mt-10">
-                <div class="hidden lg:block relative text-left text-white  hover:text-veryDarkGray">
-                    <img src="images/desktop/image-deep-earth.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                        DEEP <br> EARTH
-                    </div>
-                </div>
-                <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                    <img src="images/mobile/image-deep-earth.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                        DEEP <br> EARTH
-                    </div>
-                </div>
+        <div class="">
+          <a href="" class="float-right hidden font-jose text-veryDarkGray lg:block border-2 py-2 px-10 border-black hover:bg-black hover:text-white">SEE ALL</a>
+        </div>
+      </div>
 
-                <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
-                    <img src="images/desktop/image-night-arcade.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                        NIGHT <br> ARCADE
-                    </div>
-                </div>
-                <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                    <img src="images/mobile/image-night-arcade.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                        NIGHT <br> ARCADE
-                    </div>
-                </div>
-
-                <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
-                    <img src="images/desktop/image-soccer-team.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                        SOCCER <br> TEAM VR
-                    </div>
-                </div>
-                <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                    <img src="images/mobile/image-soccer-team.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                        SOCCER<br> TEAM VR
-                    </div>
-                </div>
-
-                <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
-                    <img src="images/desktop/image-grid.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                        THE <br> GRID
-                    </div>
-                </div>
-                <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                    <img src="images/mobile/image-grid.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                    <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                        THE <br> GRID
-                    </div>
-                </div>
-            </div>
+      <div class="flex flex-col items-center lg:flex-row justify-between lg:space-x-12 space-y-12 lg:space-y-0 mt-10">
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-deep-earth.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            DEEP <br />
+            EARTH
+          </div>
+        </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-deep-earth.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            DEEP <br />
+            EARTH
+          </div>
         </div>
 
-        <div
-            class="flex flex-col items-center lg:flex-row justify-between lg:space-x-12 space-y-12 lg:space-y-0 lg:mt-10">
-            <div class="hidden lg:block relative text-left text-white  hover:text-veryDarkGray">
-                <img src="images/desktop/image-from-above.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                    FROM UP <br> ABOVE VR
-                </div>
-            </div>
-            <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                <img src="images/mobile/image-from-above.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                    FROM UP <br> ABOVE VR
-                </div>
-            </div>
-
-            <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
-                <img src="images/desktop/image-pocket-borealis.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                    POCKET <br> BOREALIS
-                </div>
-            </div>
-            <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                <img src="images/mobile/image-pocket-borealis.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                    POCKET <br> BOREALIS
-                </div>
-            </div>
-
-            <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
-                <img src="images/desktop/image-curiosity.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                    THE <br> CURIOSITY
-                </div>
-            </div>
-            <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                <img src="images/mobile/image-curiosity.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                    THE<br> CURIOSITY
-                </div>
-            </div>
-
-            <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
-                <img src="images/desktop/image-fisheye.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
-                    MAKE IT <br> FISHEYE
-                </div>
-            </div>
-            <div class=" lg:hidden relative text-left text-white hover:text-veryDarkGray">
-                <img src="images/mobile/image-fisheye.jpg" alt="" class="hover:bg-white hover:opacity-40">
-                <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
-                    MAKE IT <br> FISHEYE
-                </div>
-            </div>
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-night-arcade.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            NIGHT <br />
+            ARCADE
+          </div>
+        </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-night-arcade.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            NIGHT <br />
+            ARCADE
+          </div>
         </div>
 
-        <div class="flex flex-col item-center mt-10 mx-auto item-center">
-            <a href=""
-                class="mx-auto lg:hidden font-jose text-veryDarkGray border-2 py-3 px-12 border-black hover:bg-black hover:text-white">SEE
-                ALL</a>
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-soccer-team.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            SOCCER <br />
+            TEAM VR
+          </div>
         </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-soccer-team.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            SOCCER<br />
+            TEAM VR
+          </div>
+        </div>
+
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-grid.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            THE <br />
+            GRID
+          </div>
+        </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-grid.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            THE <br />
+            GRID
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center lg:flex-row justify-between lg:space-x-12 space-y-12 lg:space-y-0 lg:mt-10">
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-from-above.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            FROM UP <br />
+            ABOVE VR
+          </div>
+        </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-from-above.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            FROM UP <br />
+            ABOVE VR
+          </div>
+        </div>
+
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-pocket-borealis.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            POCKET <br />
+            BOREALIS
+          </div>
+        </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-pocket-borealis.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            POCKET <br />
+            BOREALIS
+          </div>
+        </div>
+
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-curiosity.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            THE <br />
+            CURIOSITY
+          </div>
+        </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-curiosity.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            THE<br />
+            CURIOSITY
+          </div>
+        </div>
+
+        <div class="hidden lg:block relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/desktop/image-fisheye.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-12 left-4 pl-5 text-3xl font-jose">
+            MAKE IT <br />
+            FISHEYE
+          </div>
+        </div>
+        <div class="lg:hidden relative text-left text-white hover:text-veryDarkGray">
+          <img src="images/mobile/image-fisheye.jpg" alt="" class="hover:bg-white hover:opacity-40" />
+          <div class="absolute bottom-2 left-4 pl-5 text-3xl font-jose">
+            MAKE IT <br />
+            FISHEYE
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col item-center mt-10 mx-auto item-center">
+        <a href="" class="mx-auto lg:hidden font-jose text-veryDarkGray border-2 py-3 px-12 border-black hover:bg-black hover:text-white">SEE ALL</a>
+      </div>
+    </section>
+
+    <section class="px-5 lg:px-48 py-20 font-jose">
+      <div class="about">
+        <h2 class="text-4xl text-center md:text-left md:text-5xl text-almostBlock font-jose pb-20">About Us</h2>
+
+        <div class="flex flex-col items-center md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-6 flex-wrap pb-5 text-darkGray text-xl">
+          <hr class="md:hidden" />
+          <button class="tab-title focus:text-purple-800" onclick="aboutAccordion('about-item')">About Loopstudios</button>
+          <hr class="md:hidden" />
+          <button class="tab-title focus:text-purple-800" onclick="aboutAccordion('faq-item')">FAQS</button>
+          <hr class="md:hidden" />
+          <button class="tab-title focus:text-purple-800" onclick="aboutAccordion('cnt-item')">Conatct Us</button>
+          <hr class="md:hidden" />
+        </div>
+        <hr class="w-full border-veryDarkGray" />
+
+        <div id="about-item" class="tab-content pt-10">
+          <h3 class="text-3xl text-almostBlack text-center">An immersive creative experience</h3>
+
+          <p class="pt-10 text-darkGray text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa illo esse eius sunt quibusdam! Harum impedit error dicta incidunt, eos blanditiis ut amet ea temporibus, sed a, corrupti nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque temporibus
+            pariatur hic repellendus sint neque qui ullam, omnis eos! Voluptatibus mollitia odio neque animi eos officiis cumque sed corrupti. Minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum tempore in necessitatibus at suscipit harum esse quia et! Maiores, dicta. Quam
+            explicabo corrupti autem excepturi tenetur modi sequi expedita.
+          </p>
+
+          <p class="pt-5 text-darkGray text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa illo esse eius sunt quibusdam! Harum impedit error dicta incidunt, eos blanditiis ut amet ea temporibus, sed a, corrupti nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque temporibus
+            pariatur hic repellendus sint neque qui ullam, omnis eos! Voluptatibus mollitia odio neque animi eos officiis cumque sed corrupti. Minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum tempore in necessitatibus at suscipit harum esse quia et! Maiores, dicta. Quam
+            explicabo corrupti autem excepturi tenetur modi sequi expedita.
+          </p>
+
+          <p class="pt-5 text-darkGray text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa illo esse eius sunt quibusdam! Harum impedit error dicta incidunt, eos blanditiis ut amet ea temporibus, sed a, corrupti nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque temporibus
+            pariatur hic repellendus sint neque qui ullam, omnis eos! Voluptatibus mollitia odio neque animi eos officiis cumque sed corrupti. Minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum tempore in necessitatibus at suscipit harum esse quia et! Maiores, dicta. Quam
+            explicabo corrupti autem excepturi tenetur modi sequi expedita.
+          </p>
+        </div>
+
+        <div id="faq-item" class="tab-content pt-10 hidden focus:text-rose-400">
+          <h3 class="text-3xl text-almostBlack text-center">FAQS</h3>
+          <div class="">
+            <h4 class="pt-10 text-2xl text-almostBlack">What is loopstudio about?</h4>
+            <p class="pt-5 text-darkGray text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa illo esse eius sunt quibusdam! Harum impedit error dicta incidunt, eos blanditiis ut amet ea temporibus, sed a, corrupti nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque temporibus
+              pariatur hic repellendus sint neque qui ullam, omnis eos! Voluptatibus mollitia odio neque animi eos officiis cumque sed corrupti. Minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum tempore in necessitatibus at suscipit harum esse quia et! Maiores, dicta. Quam
+              explicabo corrupti autem excepturi tenetur modi sequi expedita.
+            </p>
+          </div>
+          <div class="">
+            <h4 class="pt-10 text-2xl text-almostBlack">Careers to follow on loopstudios?</h4>
+            <p class="pt-5 text-darkGray text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa illo esse eius sunt quibusdam! Harum impedit error dicta incidunt, eos blanditiis ut amet ea temporibus, sed a, corrupti nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque temporibus
+              pariatur hic repellendus sint neque qui ullam, omnis eos! Voluptatibus mollitia odio neque animi eos officiis cumque sed corrupti. Minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum tempore in necessitatibus at suscipit harum esse quia et! Maiores, dicta. Quam
+              explicabo corrupti autem excepturi tenetur modi sequi expedita.
+            </p>
+          </div>
+          <div class="">
+            <h4 class="pt-10 text-2xl text-almostBlack">Why loopstudios?</h4>
+            <p class="pt-5 text-darkGray text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa illo esse eius sunt quibusdam! Harum impedit error dicta incidunt, eos blanditiis ut amet ea temporibus, sed a, corrupti nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque temporibus
+              pariatur hic repellendus sint neque qui ullam, omnis eos! Voluptatibus mollitia odio neque animi eos officiis cumque sed corrupti. Minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum tempore in necessitatibus at suscipit harum esse quia et! Maiores, dicta. Quam
+              explicabo corrupti autem excepturi tenetur modi sequi expedita.
+            </p>
+          </div>
+        </div>
+
+        <div id="cnt-item" class="tab-content pt-10 hidden focus:text-rose-400">
+          <h3 class="text-3xl text-almostBlack text-center">CONTACT US</h3>
+          <div class="basis-full lg:self-center mt-10 lg:mt-0 lg:ml-28">
+            <form id="contact-form">
+              <label for="form-name" class="block mb-2 text-md text-white uppercase">Name</label>
+              <div class="relative mt-1 mb-12">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 opacity-60" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
+                  </svg>
+                </div>
+
+                <input type="text" id="form-name" name="name" maxlength="40" placeholder="Your Name" class="bg-neutrals-700 border-[1.5px] border-neutrals-500 rounded-md block w-full pl-10 pr-10 p-2.5 focus:ring-none focus:border-brand focus:outline-none" />
+              </div>
+
+              <div class="relative mt-1 mb-12">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 opacity-60" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                </div>
+                <input type="email" id="form-email" name="email" maxlength="40" placeholder="Email Address" class="bg-neutrals-700 border-[1.5px] border-neutrals-500 rounded-md block w-full pl-10 p-2.5 focus:ring-none focus:border-brand focus:outline-none" />
+              </div>
+
+              <div class="relative mt-1 mb-12">
+                <textarea type="text" id="form-message" name="message" rows="4" placeholder="Your Message" class="block p-2.5 w-full bg-neutrals-700 rounded-lg border border-neutrals-500 focus:ring-none focus:border-brand focus:outline-none"></textarea>
+              </div>
+
+              <button type="submit" class="px-5 py-2 shadow-2xl bg-black text-white flex items-center" style="background-image: url('/assets/button-dark.svg')">
+                Hit me up
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline-block ml-2" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.563 3.34a1.002 1.002 0 0 0-.989-.079l-17 8a1 1 0 0 0 .026 1.821L8 15.445v6.722l5.836-4.168 4.764 2.084a1 1 0 0 0 1.399-.85l1-15a1.005 1.005 0 0 0-.436-.893zm-2.466 14.34-5.269-2.306L16 9.167l-7.649 4.25-2.932-1.283 13.471-6.34-.793 11.886z"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="px-5 lg:px-48 bg-black py-10">
-        <div class="flex flex-col lg:flex-row justify-between">
-            <div class="flex flex-col ">
-                <div>
-                    <img src="images/logo.svg" alt="" class="items-center lg:items-left mx-auto pb-8 lg:mx-0">
-                </div>
-                <div
-                    class="flex flex-col lg:flex-row lg:space-x-3 font-jose text-white items-center lg:text-left space-y-3 lg:space-y-0">
-                    <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3">About </a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Careers</a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Events</a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Products</a>
-                    <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white ">Support</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col  pt-10 lg:pt-0">
-                <div
-                    class="flex justify-center lg:justify-end space-x-5 font-jose text-white pb-4 lg:pb-8 items-center lg:space-y-0">
-                    <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img
-                            src="images/icon-facebook.svg" alt="">
-                    </a>
-                    <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img
-                            src="images/icon-twitter.svg" alt=""></a>
-                    <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img
-                            src="images/icon-pinterest.svg" alt=""></a>
-                    <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img
-                            src="images/icon-instagram.svg" alt=""></a>
-
-                </div>
-
-                <div class="text-darkGray items-center lg:items-left mx-auto font-jose  lg:mx-0">
-                    &copy; 2021 Loopstudios, All rights reserved.
-                </div>
-
-
-            </div>
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="flex flex-col">
+          <div>
+            <img src="images/logo.svg" alt="" class="items-center lg:items-left mx-auto pb-8 lg:mx-0" />
+          </div>
+          <div class="flex flex-col lg:flex-row lg:space-x-3 font-jose text-white items-center lg:text-left space-y-3 lg:space-y-0">
+            <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3">About </a>
+            <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white">Careers</a>
+            <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white">Events</a>
+            <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white">Products</a>
+            <a href="#" class="hover:border-b-2 hover:pb-3 hover:border-white">Support</a>
+          </div>
         </div>
-    </footer>
-</body>
 
+        <div class="flex flex-col pt-10 lg:pt-0">
+          <div class="flex justify-center lg:justify-end space-x-5 font-jose text-white pb-4 lg:pb-8 items-center lg:space-y-0">
+            <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img src="images/icon-facebook.svg" alt="" /> </a>
+            <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img src="images/icon-twitter.svg" alt="" /></a>
+            <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img src="images/icon-pinterest.svg" alt="" /></a>
+            <a href="#" class="hover:border-b-2 hover:border-white hover:pb-3"><img src="images/icon-instagram.svg" alt="" /></a>
+          </div>
+
+          <div class="text-darkGray items-center lg:items-left mx-auto font-jose lg:mx-0">&copy; 2021 Loopstudios, All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
